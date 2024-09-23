@@ -1,0 +1,19 @@
+//Consulta de forma sencilla
+
+//Se guarda la consulta en una variable:
+
+$sql = "SELECT * from nombre_tabla";
+
+//Los resultados se almacenan en una nueva variable:
+
+$result = mysqli_query( $conn, $sql );
+
+//Una vez obtenido el paquete de resultados hay que recorrer todas las filas o al menos saber cual necesitamos:
+//Podemos saber el numero de filas con:
+
+$num_filas = mysqli_num_rows( $result );
+
+//Y ahora podemos usar un loop para recorrer toda la tabla y extraer todos los datos. 
+//Hay que extraer los datos de forma asociativa: 
+
+$row = mysqli_fetch_assoc( $result );
