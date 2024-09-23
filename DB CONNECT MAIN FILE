@@ -1,0 +1,17 @@
+//SE DEBE PONER EN UN ARCHIVO A PARTE PARA PODER REQUERIRLO DESPUES
+
+//SE CREAN LAS CONSTANTES CON LOS DATOS DE CONEXION
+
+define('HOST_DB', 'localhost');
+define('USER_DB', 'root');
+define('PASSWORD_DB', 'root');
+define('NAME_DB', 'database');
+
+//SE CREA LA CONEXIÓN EN UNA VARIABLE
+
+$conn = new mysqli(
+  constant('HOST_DB),
+  constant('USER_DB'),
+  constant('PASSWORD_DB'),
+  constant('NAME_DB),
+);
